@@ -57,7 +57,7 @@
     <h1> TrapAdvisor </h1>
     <h2 class="text-muted"> The best page to find places you SHOULDN'T go!! </h2>
     </div>
-    <hr class="bg-dark col-xs-12">
+    <hr class="bg-dark">
 
 
 <!-- Footer -->
