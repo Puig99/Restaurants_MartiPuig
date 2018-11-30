@@ -59,7 +59,71 @@
     </div>
     <hr class="bg-dark">
 
-
+<!-- ARRAYS -->
+<?php
+$restaurants=array(
+                  array(
+                        "name"=>"Milo cocina mestiza",
+                        "locality"=>"Palma de Mallorca",
+                        "street"=>"Calle Caro nº30",
+                        "postal"=>"07013",
+                        "phone"=>"8710040413",
+                        "image"=>"Foto"
+                      ),
+                  array(
+                        "namw"=>"La nueva Burguesa",
+                        "locality"=>"Palma de Mallorca",
+                        "street"=>"Calle Sant Magi nº76",
+                        "postal"=>"07013",
+                        "phone"=>"871509530",
+                        "image"=>"foto"
+                      ),
+                  array(
+                        "name"=>"Norice Palma",
+                        "locality"=>"Palma de Mallorca",
+                        "street"=>"Plaça de Sant Antoni nº17",
+                        "postal"=>"07002",
+                        "phone"=>"871115308",
+                        "image"=>"foto"
+                      ),
+                  array(
+                        "name"=>"Daikiya",
+                        "locality"=>"Palma de Mallorca",
+                        "street"=>"Carrer de Jaume Balmes nº63",
+                        "postal"=>"07004",
+                        "phone"=>"871708557",
+                        "image"=>"foto"
+                      ),
+                  array(
+                    "name"=>"Mas39",
+                    "locality"=>"Palma de Mallorca",
+                    "street"=>"Calle de La Fabrica nº13",
+                    "postal"=>"07013",
+                    "phone"=>"871044623",
+                    "image"=>"foto"
+                  ));
+                  ?>
+<div class="container">
+<div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="imatge restaurant">
+          </a>
+        </div>
+        <div class="col-md-5">
+        <ul>
+          <!-- Nom restaurant -->
+          <li>  <h3>Nom</h3>  </li>
+          <!-- Localitat -->
+          <li>  <h5>Localitat</h5> </li>
+          <li>  <h5> descripcio </h5> </li>
+          <li>  <h5> Direcció </h5> </li>
+          <li>  <h5> Codi postal </h5> </li>
+          <li>  <h5> Telefon </h5>  </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
