@@ -20,7 +20,7 @@
                       "street"=>"Calle Caro nº30",
                       "postal"=>"07013",
                       "phone"=>"8710040413",
-                      "image"=>"Foto",
+                      "image"=>"http://img2.rtve.es/i/?w=1600&i=1429107523835.jpg",
                       "commtitle"=>"El peor restaurante de la HISTORIA",
                       "comment"=>"Tras muchos años de probar restaurantes, buenos y malos, pensaba que lo peor ya lo habría visto, que nada me podía sorprender, pero me equivocaba, este es sin duda el PEOR RESTAURANTE EN EL QUE HE ESTADO EN TODA MI VIDA"
                         ),
@@ -30,7 +30,7 @@
                       "street"=>"Calle Sant Magi nº76",
                       "postal"=>"07013",
                       "phone"=>"871509530",
-                      "image"=>"foto",
+                      "image"=>"https://www.formulatv.com/images/noticias/73600/73635/7_30b37638d4.jpg",
                       "commtitle"=>"Es un ascooo",
                       "comment"=>"Estaba comiendo de lo mas rico. Hasta que me hechi una pisca de picante y ne sale una mosca dentro del aceite que ascoooooo encontrarne con ese bichoooo" 
                         ),
@@ -40,9 +40,9 @@
                         "street"=>"Plaça de Sant Antoni nº17",
                         "postal"=>"07002",
                         "phone"=>"871115308",
-                        "image"=>"foto",
+                        "image"=>"https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/31/Recortada/img_randres_20170331-092323_imagenes_lv_terceros_pie_rte_raco_de_la_paella_valencia-kdsH-U421335208134WWD-992x558@LaVanguardia-Web.jpg",
                         "commtitle"=>"La paella más mala y cara que me he comido jamás",
-                        "comment"=>"Es una vergüenza que aún queden restaurantes que timan a sus clientes con platos como paellas hechas con producto congelado e insulso hervido en agua disgustada dando como resultado un paella sin sabor e indecentemente cara. Vaya jeta. Pésimo y nada recomendable." 
+                        "comment"=>"Es una vergüenza que aún queden restaurantes que timan a sus clientes con platos como paellas hechas con producto congelado e insulso hervido en agua disgustada dando como resultado un paella sin sabor e indecentemente cara. Vaya jeta." 
                          ),
                       array(
                         "name"=>"Daikiya",
@@ -50,7 +50,7 @@
                         "street"=>"Carrer de Jaume Balmes nº63",
                         "postal"=>"07004",
                         "phone"=>"871708557",
-                        "image"=>"foto",
+                        "image"=>"https://eltertulianoblog.files.wordpress.com/2017/06/cuy-chactado.jpg?w=800&h=450&crop=1",
                         "commtitle"=>"El peor restaurante de Mallorca",
                         "comment"=>"Creo que este restaurante sólo lo define esa palabra 'pésimo'  fui a una comunión, pedí solomillo y hubiera preferido comerme la suela de mi zapato, los camareros borrachos una vergüenza. Si odias a alguien recomiendale este restaurante" 
                       ),
@@ -60,7 +60,7 @@
                         "street"=>"Calle de La Fabrica nº13",
                         "postal"=>"07013",
                         "phone"=>"871044623",
-                        "image"=>"foto",
+                        "image"=>"http://cadenaser00.epimg.net/emisora/imagenes/2017/10/19/ser_cuenca/1508422914_684312_1508423109_noticia_normal.jpg",
                         "commtitle"=>"Decepcionante , tardaré en volver",
                         "comment"=>"He sido cliente regular de la barra de pinchos, nada que objetar sobre la comida . 
                         Pero tengo que decir que el último día tuve muy mala suerte. Ninguneo y falta de profesionalidad por parte del personal como pocas veces y en pocos sitios he vivido , ya no hablemos de amabilidad ni de empatía que brillaron por su ausencia.
@@ -73,20 +73,20 @@
        <!-- Card on es mostra la informació dels arrays -->
        <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="<?= $value["imatge"] ?>/700x300" alt="imatge restaurant">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="<?= $value["image"] ?>" alt="imatge restaurant">
         </a>
       </div>
       <div class="col-md-5">
-      <ul>
+      <ul class="list-group list-group-flush">
         <!-- Nom restaurant -->
-        <li>  <h3><?= $value["name"] ?></h3>  </li>
+        <li class="list-group-item">  <h3><?= $value["name"] ?></h3>  </li>
         <!-- Localitat -->
-        <li>  <h5><?= $value["locality"] ?> </h5> </li>
-        <li>  <h5> <?= $value["street"] ?></h5> </li>
-        <li>  <h5> <?= $value["postal"] ?> </h5> </li>
-        <li>  <h5> <?= $value["phone"] ?> </h5> </li>
-        <li>  <h5> <?= $value["commtitle"] ?> </h5>  </li>
-        <li>  <p> <?= $value["comment"] ?> </p>  </li>
+        <li class="list-group-item">  <h5><?= $value["locality"] ?> </h5> </li>
+        <li class="list-group-item">  <h5> <?= $value["street"] ?></h5> </li>
+        <li class="list-group-item">  <h5> <?= $value["postal"] ?> </h5> </li>
+        <li class="list-group-item">  <h5> <?= $value["phone"] ?> </h5> </li>
+        <li class="list-group-item">  <h5> <?= $value["commtitle"] ?> </h5>
+              <p> <?= $value["comment"] ?> </p>  </li>
         </ul>
       </div>
       <br>
@@ -149,6 +149,14 @@
 <?php  getRestaurants(); ?>
 </div>
 </div>
+<hr>
+<p> dame dinero skere </p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="57C4CEJYFDXMJ">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0"  width="150px" height="75px" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
