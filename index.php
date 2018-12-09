@@ -112,20 +112,12 @@
   <!--Div del navbar -->
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
    <!--Link i nom de la pàgina -->
-    <a class="navbar-brand" href="#">TrapAdivisor</a>
+    <a class="navbar-brand" href="#">TrapAdvisor</a>
    <!--Llista amb elements del navbar -->
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
    <!--Primer element de la llista -->
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-   <!--Segon element de la llista -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-   <!--Tercer element de la llista -->   
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
     
@@ -150,19 +142,14 @@
 </div>
 </div>
 <hr>
-<p> dame dinero skere </p>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="57C4CEJYFDXMJ">
-<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0"  width="150px" height="75px" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-</form>
+
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <p> Esto lo he robado que flipas, pero diremos que lo ha hecho Marti Puig</p>
+  <div class="footer-copyright text-center py-3">© 2018 Copyright
+  <br>
+  <p> Esta página es una parodia y en ningún momento debe tomarse en serio su contenido!!<p>
     <a href="https://github.com/Puig99"> Mi github </a>
   </div>
   <!-- Copyright -->
