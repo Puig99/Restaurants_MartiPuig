@@ -121,12 +121,17 @@
       </li>
     </ul>
     
-    <!-- Formulari del quadre de cerca 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <!-- Formulari del quadre de cerca -->
+    <form  method= "request"class="form-inline my-2 my-lg-0">
+      <input class="form-control mx-sm-2" type="text" name="query" placeholder="Search" aria-label="Search">
+      <select class="btn mx-2 my-sm-0" >
+      <option value="Ascending">Ascending </option>
+      <option value="Descending">Descending</option>
+      <option value="">Sample</option>
+      </select>
+      <input class="btn  mx-2 my-sm-0" type="submit" value="Send">
     </form>
-        -->
+
   </div>
 </nav>  
 <!-- Titol -->
