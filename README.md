@@ -1,6 +1,6 @@
 # Restaurants_MartiPuig
 
-#### Name: List of restaurants
+#### Name: List of restaurants v2.0
 
 #### Author: Marti Puig Albuquerque
 
@@ -14,8 +14,12 @@
 We were asked to show in a list the most 5 valued restaurants in Palma. 
 The exercise has been done with the information taken from the web page "TripAdvisor", that information was put into an array and shown in the screen with a function that generates a card containing the information for each restaurant.
 
+In this version we have included a searchbar that orders the restaurants in three ways: ascending, descending or random.
+Also, the function was put in an external file called "functions.php", which is refered in the main document so we can get its content.
+
 Since this page is a parody I added some of the worst comments I found on TripAdvisor to the restaurants I chose.
 This web page shouldn't be taken seriously.
+
 
 ---
 ## Requirements
