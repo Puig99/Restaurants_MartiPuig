@@ -9,7 +9,5 @@ $db = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
 }
-else{ 
-    echo "HA ANAT DE PUTA MARE";
-}
+mysqli_set_charset($db,"utf8");
 ?>

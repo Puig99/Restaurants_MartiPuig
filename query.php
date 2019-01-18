@@ -1,11 +1,13 @@
 <?php
 require_once "connection.php";
 $data=[];
-function test(){
+function getRestaurants(){
     global $id;
     global $db;
     global $data;
-    $sql= "SELECT * FROM restaurant INNER JOIN `image` WHERE image.restaurantId=restaurant.$id AND  restaurant.id=$id";
+    $sql= "SELECT restaurant.description, restaurant.id, restaurant.locality,
+     restaurant.name, restaurant.phoneNumber, image.filePath from restaurant 
+    inner JOIN image WHERE image.restaurantId=restaurant.id AND restaurant.id=$id";
     $result= mysqli_query($db,$sql);
 
 while ($row = mysqli_fetch_assoc($result)) {
@@ -45,8 +47,8 @@ foreach ($data as $key=> $value){
       <li class="list-group-item">  <h3><?= $value["id"] ?></h3>  </li>
       <li class="list-group-item">  <h5><?= $value["name"] ?> </h5> </li>
       <li class="list-group-item">  <h5> <?= $value["description"] ?></h5> </li>
-      <li class="list-group-item">  <h5> <?= $value["openingHours"] ?> </h5> </li>
-      <li class="list-group-item">  <h5> <?= $value["priceCategory"] ?> </h5> </li>
+      <li class="list-group-item">  <h5> <?= $value["phoneNumber"] ?> </h5> </li>
+      <li class="list-group-item">  <h5> <?= $value["locality"] ?> </h5> </li>
       </ul>
     </div>
   </div>
