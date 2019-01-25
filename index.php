@@ -62,12 +62,12 @@
 <!-- PHP -->
 <?php
 
-include 'functions.php';
-$ar= getRestaurants( 
+include 'restaurantsdb.php';
+$data= getRestaurants( 
   isset($_REQUEST["query"])?$_REQUEST["query"]:"", 
   isset($_REQUEST["order"])?$_REQUEST["order"]:""
 );
-foreach($ar as $key =>$value){
+foreach($data as $key =>$value){
       
       ?>
        <!-- Card on es mostra la informació dels arrays -->
