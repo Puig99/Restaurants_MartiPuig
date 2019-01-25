@@ -1,7 +1,7 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Tituloasdasd</title>
+    <title>Restaurant</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,12 +28,12 @@
   <!--Div del navbar -->
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
    <!--Link i nom de la pàgina -->
-    <a class="navbar-brand" href="#">TrapAdvisor</a>
+    <a class="navbar-brand" href="index.php">TrapAdvisor</a>
    <!--Llista amb elements del navbar -->
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
    <!--Primer element de la llista -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     
@@ -62,18 +62,15 @@
 <!-- PHP -->
 <?php
 
-include 'functions.php';
-$ar= getRestaurant(
-  isset($_REQUEST["query"])?$_REQUEST["query"]:"", 
-  isset($_REQUEST["order"])?$_REQUEST["order"]:""
-);
-foreach($ar as $key =>$value){
+include 'restaurantsdb.php';
+$restaurant=getRestaurant($_GET['id_rest']);
+foreach($restaurant as $key =>$value){
       
       ?>
        <!-- Card on es mostra la informació dels arrays -->
        <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <a href="restaurant.php">
             <img class="img-fluid rounded mb-3 mb-md-0" src="<?= $value["filePath"] ?>" alt="imatge restaurant">
           </a>
         </div>
@@ -84,7 +81,6 @@ foreach($ar as $key =>$value){
           <!-- Localitat -->
           <li class="list-group-item">  <h5><?= $value["description"] ?> </h5> </li>
           <li class="list-group-item">  <h5> <?= $value["locality"] ?></h5> </li>
-          <li class="list-group-item">  <h5> <?= $value["id"] ?> </h5> </li>
           <li class="list-group-item">  <h5> <?= $value["phoneNumber"] ?> </h5> </li>
           </ul>
         </div>

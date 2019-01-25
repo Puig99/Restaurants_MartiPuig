@@ -28,22 +28,21 @@
   <!--Div del navbar -->
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
    <!--Link i nom de la pàgina -->
-    <a class="navbar-brand" href="#">TrapAdvisor</a>
+    <a class="navbar-brand" href="index.php">TrapAdvisor</a>
    <!--Llista amb elements del navbar -->
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
    <!--Primer element de la llista -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     
     <!-- Formulari del quadre de cerca -->
     <form  method= "request" class="form-inline my-2 my-lg-0">
-      <input class="form-control mx-sm-2" type="text" name="query" placeholder="Search" aria-label="Search">
+      <input class="form-control mx-sm-2" type="text" name="filtre" placeholder="Search" aria-label="Search">
       <select class="btn mx-2 my-sm-0"  name="order">
       <option value="ascending">Ascending </option>
       <option value="descending">Descending</option>
-      <option value="random">Random</option>
       </select>
       <input class="btn  mx-2 my-sm-0" type="submit" value="Send">
     </form>
@@ -64,7 +63,7 @@
 
 include 'restaurantsdb.php';
 $data= getRestaurants( 
-  isset($_REQUEST["query"])?$_REQUEST["query"]:"", 
+  isset($_REQUEST["filtre"])?$_REQUEST["filtre"]:"", 
   isset($_REQUEST["order"])?$_REQUEST["order"]:""
 );
 foreach($data as $key =>$value){
@@ -73,7 +72,7 @@ foreach($data as $key =>$value){
        <!-- Card on es mostra la informació dels arrays -->
        <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <a href="restaurant.php?id_rest=<?= $value['id'] ?> ">
             <img class="img-fluid rounded mb-3 mb-md-0" src="<?= $value["filePath"] ?>" alt="imatge restaurant">
           </a>
         </div>
